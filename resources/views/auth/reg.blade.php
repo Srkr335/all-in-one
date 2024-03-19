@@ -66,7 +66,7 @@
 </div>
 
 <div class="p-t-15">
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-success" type="submit">Submit</button>
 </div>
 <div class="text-center p-t-16">
     <a class="txt2" href="{{ route('login') }}">
