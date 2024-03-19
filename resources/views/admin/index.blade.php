@@ -137,13 +137,12 @@
                   @endforeach
 
                 </tr>
-               
-                
+
                 </tbody>
               </table>
-           
+
           <!-- /.card-footer -->
-       
+
 
         <!-- Main row -->
         <div class="row">
@@ -151,7 +150,7 @@
           <div class="col-md-8">
             <!-- MAP & BOX PANE -->
             <div class="card">
-              
+
               <!-- /.card-header -->
               <div class="card-body p-0">
                 <div class="d-md-flex">
