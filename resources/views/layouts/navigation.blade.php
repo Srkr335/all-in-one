@@ -5,18 +5,19 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-                    </a>
+                    <img class="direct-chat-img" src="{{ asset('asset.dash/dist/img/user1-128x128.jpg') }}" alt="message user image" style="width: 200px; height: 80px; border-radius: 10px;">
+                </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('contact.us')" :active="request()->routeIs('contact.us')">
+                        {{ __('contact.us') }}
                     </x-nav-link>
                 </div>
             </div>
+
+
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -53,14 +54,16 @@
 
 
 
-                            <x-dropdown-link :href="route('contact.us')">
-                                {{ __('Contact_Us') }}
+                            <x-dropdown-link :href="route('dashboard')">
+                                {{ __('dashboard') }}
                             </x-dropdown-link>
                     </x-slot>
 
                 </x-dropdown>
                 
             </div>
+
+            
 
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">

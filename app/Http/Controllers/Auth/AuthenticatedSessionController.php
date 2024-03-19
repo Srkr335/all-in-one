@@ -27,6 +27,11 @@ class AuthenticatedSessionController extends Controller
     {
 
 
+        $credentials = $request->only('name', 'phone', 'email', 'password');
+        if (Auth::attempt($credentials)) {
+            $url = $this->redirectTo();
+        }
+
         $request->authenticate();
 
         $request->session()->regenerate();
@@ -46,6 +51,7 @@ class AuthenticatedSessionController extends Controller
         }
 
         return redirect()->intended( $url);
+    
     }
 
     /**

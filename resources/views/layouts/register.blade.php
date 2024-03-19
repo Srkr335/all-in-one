@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+	<title>@yield('title')</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="{{ asset('asset.login1/image/png') }}" href="mages/icons/favicon.icoi"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/vendor/animate/animate.css') }}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('asset.login1/css/main.css') }}">
 
-    <!-- Title Page-->
-    <title>@yield('title')</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Icons font CSS-->
-    <link href="{{ asset('asset.reg/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('asset.reg/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="{{ asset('asset.reg/https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i') }}" rel="stylesheet">
-<!-- Add this to your HTML head section -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
-
-    <!-- Vendor CSS-->
-    <link href="{{ asset('asset.reg/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('asset.reg/vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="{{ asset('asset.reg/css/main.css') }}" rel="stylesheet" media="all">
+<!--===============================================================================================-->
 </head>
-
 <body>
-    @yield('content')
+	@yield('content')
+
+	@yield('scripts')
 
 
 
-    
-@yield('scripts')
-   
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	
 
+</body>
 </html>
-<!-- end document-->

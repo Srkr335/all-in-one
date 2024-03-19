@@ -13,7 +13,7 @@ class Usercontroller extends Controller
         $users =User::get();
         return view('role-permission.user.index',[
             'users' =>$users
-        ]);
+        ])->with('status', ' Successfully Login ');
     }
 
 

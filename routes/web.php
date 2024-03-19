@@ -12,6 +12,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProductimageController;
+use App\Http\Controllers\ProductController;
+
 use App\Http\Controllers\Auth\ForgotPasswordController;
 
 
@@ -91,5 +93,9 @@ Route::get('/dashboard', function () {
     Route::get('gallery/upload', [GalleryController::class, 'create'])->name('create');
     Route::post('gallery/upload', [GalleryController::class, 'store'])->name('store');
     Route::get('gallery/{galleryId}/delete', [GalleryController::class, 'destory'])->name('destory');
+
+    Route::get('/products', [ProductController::class, 'index'])->name('products');
+
+
 
                                 require __DIR__.'/auth.php';

@@ -7,5 +7,5 @@ use Illuminate\Http\Request;
 class AgentController extends Controller
 {
     public function AgentDashboard(){
-        return view('agent.agent_dad');
+        return view('agent.agent_dad')->with('status', ' Successfully Login ');
     }}

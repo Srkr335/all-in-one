@@ -5,7 +5,7 @@
 
 @section('content')
 
-    
+
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
@@ -19,7 +19,9 @@
                 <span class="login100-form-title">
                     Login
                 </span>
-               
+
+
+
 
                 <div class="wrap-input100 validate-input" for="login" :value="__('Email/Name/Phone')">
                     <input class="input100" type="text" id="login" class="block mt-1 w-full"  name="login" :value="old('login')" required autofocus autocomplete="username"  placeholder="Name/Email/Phone"/>
@@ -28,6 +30,9 @@
                         <i class="#" aria-hidden="true"></i>
                     </span>
                 </div>
+
+
+               
 
     
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
@@ -39,6 +44,19 @@
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+<div>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+</div>
+                  
 
 
 

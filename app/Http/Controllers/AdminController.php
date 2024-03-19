@@ -30,9 +30,12 @@ class AdminController extends Controller
         return redirect('/login');
     }
     public function AdminLogin(){
-        return view('admin.admin_login');
+        return view('admin.admin_login')->with('status', ' Successfully Login ');
+
+
+        
     }
-    public function AdminProfile(){ 
+    public function AdminProfile(){
         $id =Auth::user()->id;
         $profileData =User::find($id);
         return view('admin.admin_profile_view',compact('profileData'));
@@ -95,12 +98,12 @@ return back()->with( $notification );
     public function forgotPassword(){
         return view('auth.forgot-password');
     }
-    public function doForgotPassword(){
-       $user = user::where('email',request('email'))->first();
-       $token = Str::random(120);
-       $user->update(['password_reset_token'=>$token]);
-       Mail::to(request('email'))->send(new PasswordResetMail($user,$token));
-       return $token;
-    }
+    // public function doForgotPassword(){
+    //     $user = User::where('email', request('email'))->first();
+    //     $token = Str::random(120);
+    //     $user->update(['password_reset_token' => $token]);
+    //     Mail::to(request('email'))->send(new PasswordResetMail($user, $token));
+    //     return $token;
+    // }
 
 }
