@@ -69,9 +69,9 @@
     <button class="btn btn-primary" type="submit">Submit</button>
 </div>
 <div class="text-center p-t-16">
-    <p>Already have an Account</p>
-    <a class="btn btn-success txt2 " href="{{ route('login') }}">
-        Sign In
+    <a class="txt2" href="{{ route('login') }}">
+        Already have an Account
+        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
     </a>
 </div>
 
