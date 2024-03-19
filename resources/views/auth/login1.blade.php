@@ -103,12 +103,12 @@
 
 
 
-                <div class="  btn-sm text-center p-t-1">
+                {{-- <div class="  btn-sm text-center p-t-1">
             {{-- <a class="txt1"    href="{{ route('forgot.password') }}"> --}}
 
-                        Forgot Password
+                        {{-- Forgot Password --}}
                     </a>
-                </div>
+                </div> 
 
 
             </form>
